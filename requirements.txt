@@ -1,0 +1,22 @@
+# LangChain core packages
+langchain
+langchain-core
+langchain-community
+
+# Google Generative AI integration for Gemini and Embeddings
+langchain-google-genai
+
+# Vector Store (FAISS)
+faiss-cpu
+
+# Document Loader (CSV) and dependencies
+pandas
+python-dotenv
+
+# Fix for the "TypeError: Descriptors cannot be created directly" with protobuf
+# Pins to a version compatible with Google SDKs and common LangChain versions.
+protobuf==3.20.3
+
+# Recommended: Pin Pydantic to avoid internal LangChain validation issues (e.g., the 
+# abstract class error) that occur when Pydantic v2 is strictly enforced.
+pydantic<2.0.0
